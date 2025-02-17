@@ -1,0 +1,933 @@
+{
+    "intents": [
+        {
+            "tag": "Saludo",
+            "patterns": ["Hola", "Buenos dias", "Buenas tardes"],
+            "responses": ["¡Hola! ¿Como estás?", "¡Buen dia! ¿Qué necesitas?"]
+        },
+        {
+            "tag": "Despedida",
+            "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
+            "responses": ["¡Adiós! ¡Esperamos verte pronto!", "¡Hasta luego! ¡Gracias por visitarnos!"]
+        }, 
+        {
+            "tag": "Saludo 2",
+            "patterns": ["Como estas", "Que tal?", "Como te va", "bien y tu"],
+            "responses": ["Bien, ¿En que puedo ayudarte?", "Todo bien, ¿En que puedo ayudarte?"]
+        },
+        {
+            "tag": "Ayuda",
+            "patterns": ["Necesito ayuda", "Ayuda", "Necesito informacion", "Información"],
+            "responses": ["¿En que podemos ayudarte?", "Estoy aqui para ayudarte, ¿Que necesitas?"]
+        },
+        {
+            "tag": "Agradecimiento",
+            "patterns": ["Gracias", "Muchas Gracias", "Gracias por la información", "Gracias", "gracias"],
+            "responses": ["¡De nada! ¡Estoy aqui para ayudarte", "¡Siempre a su servicio!", "¡fue un placer ayudarte!", "Fue un placer, si necesita algo mas no dudes en escribirme"]
+        },
+        {
+            "tag": "Contacto",
+            "patterns": ["¿Cuál es su número de telefono?", "Telefono", "Contacto", "contactos", "telefono", "Correo", 
+            "correos", "numero", "Número", "numero de telefono", "Numero de telefono", "¿Cuál es su correo electrónico?"],
+            "responses": ["Puedes contactarnos por telefono al +51 904 113 095 o 076 614374, por correo electronico a inscripciones@ersperu.pe o administracion@ersperu.pe \n\n **Asegúrate de incluir tu nombre completo en el mensaje para que podamos atender tu solicitud de manera efectiva.**"]
+        },
+        {
+            "tag": "Ubicacion",
+            "patterns": ["¿Cuál es su dirección?", "Ubicación", "Dirección", "donde estan ubicados", "ubicacion", "Direccion", "direccion","¿Donde estan ubicados?"],
+            "responses": ["Puedes ubicarnos en el mejor lugar de cajamarca Jr.Santa Teresa de Journet 415, Cajamarca, Cajamarca. Cerca a Mega Plaza junto al gobierno regional al costado de la SUNAT."]
+        },
+        {
+            "tag": "informacion de cursos",
+            "patterns": ["cursos", "todos los cursos",
+           "Cursos", "Que cursos tienes", "Que cursos tienen", "cursos que me pueden brindar", "que cursos tienen", "que cursos tienes"],
+            "responses": ["📋 LISTA DE CURSOS:\n\n- **Capacitación Básica en Seguridad y Salud Ocupacional (Anexo N° 6)** Modificado por el Artículo 1 del Decreto Supremo N° 023-2017-EM, publicado el 18 de agosto de 2017.\n\n- **Capacitación de Cumplimiento en Seguridad y Salud Ocupacional**\n\n- **Capacitación en Respuesta a Emergencias**\n\n- **Capacitación para Supervisores de Alto Riesgo**\n\n **Todos los precios de los cursos son sin IGV. El costo puede variar según las horas, modalidad y nivel de requerimiento.**\n\n**Beneficios de desarrollar sus cursos con nosotros:**\n\n ✓ Asesoramiento especializado en la elaboración de su plan anual de capacitación.\n\n ✓ 1 beca gratuita al 100% para un supervisor o gerencia en el curso de su preferencia, según el cronograma del curso.\n\n ✓ Reporte general de los cursos llevados por sus colaboradores, alineado con su plan anual de capacitación.\n\n ✓ Reporte de participación en cada curso.\n\n ✓ Certificado para cada participante con nombres completos, empresa y cantidad de horas capacitadas.\n\n 🔍 Si necesitas más información o no encuentras el curso que estás buscando, escribe el nombre del curso que tenga similitud y te brindaré más detalles."]
+        },
+        {
+            "tag": "Preguntas Frecuentes2",
+            "patterns": ["¿Tienen servicio al cliente?", "Servicio al cliente", "servicio al cliente"],
+            "responses": ["Sí, contamos con servicio al cliente. Puedes contactarnos por teléfono al +51 904 113 095 o 076 614374 o por correo electrónico a inscripciones@ersperu.pe o administracion@ersperu.pe **Asegúrate de incluir tu nombre completo en el mensaje para que podamos atender tu solicitud de manera efectiva.**."]
+        },
+        {
+            "tag": "Preguntas Frecuentes3",
+            "patterns": ["¿Dónde puedo encontrar más información?", "mas informacion", "información", "informacion"],
+            "responses": ["Puedes encontrar más información llamando al +51 904 113 095 o 076 614374 o por correo electrónico a inscripciones@ersperu.pe o administracion@ersperu.pe.\n\n Estamos aquí para ayudarte, no dudes en preguntar cualquier cosa que necesites.\n\n **Asegúrate de incluir tu nombre completo en el mensaje para que podamos atender tu solicitud de manera efectiva.**"]
+        },
+        {
+            "tag": "Preguntas Frecuentes4",
+            "patterns": ["¿Cómo puedo inscribirme?", "¿Qué necesito para inscribirme?", "Inscripción", "inscripciones", "inscripcion", "Quiero Inscribirme", "quiero inscribirme"],
+            "responses": ["Para inscribirte, puedes contactarnos al numero +51 904 113 095 o 076 614374 o por correo electrónico a inscripciones@ersperu.pe o administracion@ersperu.pe y gustosamente te asistiremos con el proceso de inscripción.\n\n **Asegúrate de incluir tu nombre completo en el mensaje para que podamos atender tu solicitud de manera efectiva.**"]
+        },
+        {
+            "tag": "cotización",
+            "patterns": ["Quiero una cotización", "cotizacion", "Necesito una cotización", "Me gustaría recibir una cotización"],
+            "responses": [
+                "Para solicitar una cotización, por favor envía un mensaje con tu nombre completo a los correos de la empresa: inscripciones@ersperu.pe o administracion@ersperu.pe, o a través de WhatsApp al número +51 904 113 095.\n\n **Asegúrate de incluir tu nombre completo en el mensaje para que podamos atender tu solicitud de manera efectiva.**"]
+        },
+        {
+            "tag": "PROGRAMACIÓN",
+            "patterns": ["Programación", "tienen programacion semanal?", "¿Tienen programación semanal?", "programacion"],
+            "responses": ["Actualmente no contamos con una programación semanal fija, pero puedes elegir la fecha que más te convenga.\n\n **¡Escríbenos a nuestros correos inscripciones@ersperu.pe o administracion@ersperu.pe, o llámanos al +51 904 113 095 o al 076 614374 para más detalles y nos adaptaremos a tus necesidades!** \n\n**Asegúrate de incluir tu nombre completo en el mensaje para que podamos atender tu solicitud de manera efectiva.**"]
+        },
+        {
+          "tag": "cursos_basicos_seguridad",
+          "patterns": [
+              "Quiero información sobre cursos básicos de seguridad",
+              "Cursos básicos de seguridad",
+              "cursos basicos de seguridad",
+              "Cuáles son los cursos de seguridad ocupacional",
+              "Capacitación en seguridad y salud ocupacional",
+              "Salud"],
+          "responses": ["Los cursos básicos en Seguridad y Salud Ocupacional incluyen los siguientes temas:\n\n- Gestión de la Seguridad y Salud Ocupacional basado en el Reglamento de Seguridad y Salud Ocupacional y Política de Seguridad y Salud Ocupacional.\n- Notificación, investigación y reporte de incidentes, incidentes peligrosos y accidentes de trabajo.\n- Liderazgo y motivación. Seguridad basada en el comportamiento.\n- Respuesta a emergencias por áreas específicas.\n- IPERC (Identificación de Peligros, Evaluación de Riesgos y Controles).\n- Trabajos en altura.\n- Mapa de riesgos. Riesgos psicosociales.\n- Significado y uso de código de señales y colores.\n- Auditoría, fiscalización e inspección de seguridad.\n- Primeros auxilios.\n- Prevención y protección contra incendios.\n- Estándares y procedimientos escritos de trabajo seguro por actividades.\n- Higiene ocupacional (agentes físicos, químicos, biológicos). Disposición de residuos sólidos. Control de sustancias peligrosas.\n- Manejo defensivo y/o transporte de personal.\n- Comité de Seguridad y Salud Ocupacional. Reglamento Interno de Seguridad y Salud Ocupacional. Programa Anual de Seguridad y Salud Ocupacional. (03 cursos fusionados).\n- Seguridad en la oficina y ergonomía.\n- Riesgos eléctricos.\n- Prevención de accidentes por desprendimiento de rocas.\n- Prevención de accidentes por gaseamiento.\n- Uso de equipo de protección personal (EPP).\n\nPara más información, contáctanos contáctanos al teléfono: +51 904 113 095 o 076 614374 o envíanos un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."]
+        },
+        {
+          "tag": "capacitación_seguridad_salud_ocupacional",
+          "patterns": [
+              "Quiero información sobre capacitación en seguridad y salud ocupacional",
+              "capacitación en seguridad y salud ocupacional",
+              "Cursos de seguridad y salud ocupacional disponibles",              
+              "Detalles de capacitación en seguridad"],
+          "responses": ["La capacitación en Seguridad y Salud Ocupacional incluye los siguientes cursos:\n\n1. **Seguridad en Manipulación de Llantas** (4 horas)\n2. **Módulo básico para supervisores** (8 horas)\n3. **Choferes escolta** (4 horas)\n4. **Gestión de riesgos de la fatiga** (4 horas)\n5. **Manejo defensivo y/o transporte de personal** (con desarrollo de práctica de manejo, incluye alquiler de circuito de manejo, camioneta, combustible, etc.) (8 horas)\n6. **Seguridad con vigías** (4 horas)\n7. **Tormentas eléctricas** (4 horas)\n8. **Bloqueo de energías** (eléctrica, mecánica, hidráulica, neumática y otros) (4 horas)\n9. **Andamios y plataformas elevadas** (4 horas)\n10. **Prevención de caída de rocas** (4 horas)\n11. **Seguridad con explosivos** (4 horas)\n12. **Seguridad con herramientas eléctricas** (4 horas)\n13. **Seguridad con herramientas manuales** (4 horas)\n14. **Trabajos en caliente** (4 horas)\n15. **Excavaciones y zanjas** (4 horas)\n16. **Trabajos en espacios confinados** (4 horas)\n17. **Uso de la información de la hoja de datos de seguridad de materiales (HDSM - MSDS)** (4 horas)\n18. **Seguridad con Izaje de Carga** (4 horas)\n19. **Seguridad ante la Agresión por Terceros** (4 horas)\n20. **Control de tierra** - horas a determinar\n21. **Seguridad en movimiento de tierras** - horas a determinar\n22. **Observación de tareas** - horas a determinar\n23. **Inspecciones de seguridad** - horas a determinar\n24. **ATS** - horas a determinar\n25. **Seguridad eléctrica (NFPA 70e)** - horas a determinar.\n\nPara más información, contáctanos contáctanos al teléfono: +51 904 113 095 o 076 614374 o envíanos un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."]
+      },
+      {
+          "tag": "capacitacion_basica_seguridad_salud_ocupacional",
+          "patterns": [
+              "Quiero información sobre la capacitación básica en seguridad y salud ocupacional",
+              "Capacitación según el Anexo N° 6",
+              "anexo N° 6",
+              "capacitación básica en seguridad y salud ocupacional",
+              "seguridad y salud ocupacional",
+              "salud ocupacional",
+              "Información sobre los cursos de capacitación en seguridad y salud ocupacional"],
+          "responses": ["La capacitación básica en Seguridad y Salud Ocupacional según el Anexo N° 6 incluye los siguientes cursos:\n\n1. **Gestión de la Seguridad y Salud Ocupacional** - Basado en el Reglamento de Seguridad y Salud Ocupacional y Política de Seguridad y Salud Ocupacional. (3 horas)\n2. **Notificación, investigación y reporte de incidentes** - Incluye incidentes peligrosos y accidentes de trabajo. (3 horas)\n3. **Liderazgo y motivación** - Seguridad basada en el comportamiento. (2 horas)\n4. **Respuesta a emergencias por áreas específicas** (4 horas)\n5. **IPERC** - Identificación de Peligros, Evaluación de Riesgos y Controles. (4 horas)\n6. **Trabajos en altura** (4 horas)\n7. **Mapa de riesgos y riesgos psicosociales** (4 horas)\n8. **Significado y uso de códigos de señales y colores** (2 horas)\n9. **Auditoría, fiscalización e inspección de seguridad** (3 horas)\n10. **Primeros auxilios** (2 horas)\n11. **Prevención y protección contra incendios** (2 horas)\n12. **Estándares y procedimientos escritos de trabajo seguro** (2 horas)\n13. **Higiene ocupacional** - Incluye agentes físicos, químicos y biológicos, disposición de residuos sólidos y control de sustancias peligrosas. (2 horas)\n14. **Manejo defensivo y/o transporte de personal** (4 horas)\n15. **Comité de Seguridad y Salud Ocupacional** - Incluye Reglamento Interno de Seguridad y Salud Ocupacional y Programa Anual de Seguridad y Salud Ocupacional. (3 horas)\n16. **Seguridad en la oficina y ergonomía** (2 horas)\n17. **Riesgos eléctricos** (3 horas)\n18. **Prevención de accidentes por desprendimiento de rocas** (3 horas)\n19. **Prevención de accidentes por gaseamiento** (3 horas)\n20. **Uso de equipo de protección personal (EPP)** (2 horas).\n\nPara más información, contáctanos contáctanos al teléfono: +51 904 113 095 o 076 614374 o envíanos un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."]
+      },
+      {
+          "tag": "capacitacion_respuesta_emergencias",
+          "patterns": [
+              "Quiero información sobre la capacitación en respuesta a emergencias",
+              "capacitación en respuesta a emergencias",
+              "emergencias",
+              "primeros auxilios y rescate",
+              "Cursos de respuesta a emergencias disponibles",
+              "Capacitación en primeros auxilios y rescate"],
+          "responses": [
+              "La capacitación en Respuesta a Emergencias incluye los siguientes cursos:\n\n1. **Primer respondedor** (24 horas)\n2. **Rescate en espacios confinados** (8 horas)\n3. **Rescate en zanjas** (8 horas)\n4. **Rescate en minas subterráneas** (8 horas)\n5. **Rescate en aguas** (8 horas)\n6. **Rescate con cuerdas** (24 horas)\n7. **Extricación vehicular** (8 horas)\n8. **MATPEL Nivel Advertencia (I)** (4 horas)\n9. **MATPEL Nivel Operaciones Básicas (II)** (8 horas)\n10. **MATPEL Nivel Técnico (III)** (24 horas)\n11. **Control de sustancias peligrosas** (4 horas)\n12. **Primera respuesta a intoxicación con cianuro** (4 horas)\n13. **Formación de brigadas en respuesta a emergencias** (8 horas).\n\nPara más información, contáctanos contáctanos al teléfono: +51 904 113 095 o 076 614374 o envíanos un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."]
+      },
+      {
+          "tag": "capacitacion_supervisores_alto_riesgo",
+          "patterns": [
+              "Quiero información sobre la capacitación para supervisores de alto riesgo",
+              "alto riesgo",
+              "riesgo",
+              "Cursos de capacitación en trabajos de alto riesgo para supervisores",
+              "Capacitación en seguridad para supervisores de alto riesgo"],
+          "responses": [
+              "La capacitación para supervisores de alto riesgo incluye los siguientes cursos:\n\n1. **Trabajos en Altura** (8 horas)\n2. **Trabajos en Caliente** (8 horas)\n3. **Excavaciones y Zanjas** (8 horas)\n4. **Espacios Confinados** (8 horas)\n5. **Izaje de Cargas** (8 horas)\n6. **Aislamiento de Energías** (8 horas)\n7. **Materiales Peligrosos - MATPEL** - Duración a definir.\n\nPara más información, contáctanos al teléfono: +51 904 113 095 o 076 614374 o envíanos un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."]
+      },
+      {
+        "tag": "Costo",
+        "patterns":["Quisiera saber el costo de un curso", "costo de cursos", "Costos de los cursos", "Necesito saber el costo de los cursos",
+        "quisiera saber el costo de un curso", "Cual es el precio de los cursos", "precio", "costos"],
+        "responses": ["Los cursos de 2 horas o 4 horas tienen un costo de 30 soles, mientras que los cursos de 8 horas tienen un costo de 45 soles. \n\nEstos costos son referenciales, si deseas un descuento corporativo, por favor escríbenos al correo inscripciones@ersperu.pe o administracion@ersperu.pe o llamanos al teléfono: +51 904 113 095 o 076 614374."]
+      },
+      {
+        "tag": "horarios",
+        "patterns": ["Quisiera saber el horario de los cursos", "Horario de cursos", "horario de cursos", "horarios", "Horarios",
+                    "¿Cuáles son los horarios de los cursos?","¿Tienen horarios definidos?", "¿Pueden adaptarse a nuestros horarios?",
+                    "¿A qué hora se dictan los cursos?", "¿Los cursos son en horarios fijos?", "¿Qué disponibilidad de horarios ofrecen?", 
+                    "¿Se puede ajustar el horario del curso?", "cual es el horario de los cursos", "Cual es el horario de los cursos"],
+        "responses": [
+            "Los horarios son de 8 a.m. a 12 p.m. y de 2 p.m. a 6 p.m., pero no tenemos horarios definidos. Sin embargo, nos podemos acoger a la disponibilidad de los horarios de tu personal para que encuentren el momento que mejor les convenga."]
+      },
+      {
+        "tag": "Preguntas Frecuentes",
+        "patterns": ["¿Cuáles son sus horarios de atención?", "¿Cuál es el horario de atención?", "¿Qué días están abiertos?", "Atención"],
+        "responses": ["Nuestros horarios de atención son de lunes a viernes de 8 AM a 12 PM y de 2 PM a 6 PM. Puedes encontrar más información al contactarnos directamente."]
+    },
+    {
+        "tag": "curso_1",
+        "patterns": [
+            "¿Cuál es el costo del curso de Gestión y de la Seguridad y Salud Ocupacional?",
+            "¿Qué duración tiene el curso de Gestión y de la Seguridad y Salud Ocupacional?",
+            "Gestión y de la Seguridad y Salud Ocupacional basado en el Reglamento de Seguridad y Salud Ocupacional y Política de Seguridad y Salud Ocupacional",
+            "Gestión y de la Seguridad y Salud Ocupacional", "gestion y de la seguridad y salud ocupacional", "gestion y de la seguridad y salud ocupacional basado en el reglamento de seguridad y salud ocupacional y politica de seguridad y salud ocupacional"
+        ],
+        "responses": [
+            "El curso 'Gestión y de la Seguridad y Salud Ocupacional basado en el Reglamento de Seguridad y Salud Ocupacional' tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV."
+        ]
+        },
+        {
+        "tag": "curso_2",
+        "patterns": [
+            "¿Cuál es el costo del curso de Notificación, Investigación y reporte de Incidentes?",
+            "¿Qué duración tiene el curso de Incidentes peligrosos y accidentes de trabajo?",
+            "Notificación, Investigación y reporte de Incidentes, Incidentes peligrosos y accidentes de trabajo.",
+            "Notificación, Investigación y reporte de Incidentes.", "notificacion investigacion y reporte de incidentes", "incidentes peligrosos y accidentes de trabajo",
+            "Notificacion investigacion y reporde de incidentes", "reporte de incidentes", "incidentes", "incidentes peligrosos y accidentes de trabajo"
+        ],
+        "responses": [
+            "El curso 'Notificación, Investigación y reporte de Incidentes, Incidentes peligrosos y accidentes de trabajo' diseñado con enfoque en las necesidades de empresas y trabajadores, basado en regulaciones fundamentales como la Ley N.º 29783 tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV." 
+        ]
+       },
+       {
+        "tag": "curso_3",
+        "patterns": [
+            "¿Cuál es el costo del curso de Liderazgo y motivación?",
+            "¿Qué duración tiene el curso de Seguridad basada en el Comportamiento?", "liderazgo y motivacion",
+            "Liderazgo y motivación. Seguridad basada en el Comportamiento", "Liderazgo y motivacion", "seguridad basada en el comportamiento"
+        ],
+        "responses": [
+            "El curso 'Liderazgo y motivación. Seguridad basada en el Comportamiento' \n\n **Diseñado para lideres y equipos que buscan promover un entorno seguro a través de la motivación y el cambio de comportamientos, aprenderás técnicas de liderazgo y motivación efectivas que impulsen la seguridad en cada nivel,**\n\n Tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+        ]
+      },
+      {
+        "tag": "curso_4",
+        "patterns": [
+            "¿Cuál es el costo del curso de Respuesta a Emergencias?",
+            "¿Qué duración tiene el curso de Emergencias por áreas específicas?",
+            "Respuesta a Emergencias por áreas específicas", "respuesta a emergencias por areas especificas"
+        ],
+        "responses": [
+            "El curso 'Respuesta a Emergencias por Áreas Específicas' \n\n **Dirigido a profesionales y equipos que desean estar preparados para enfrentar emergencias en diferentes áreas de trabajo para responder ante situaciones minimizando riesgos y protegiendo al personal.** \n\nTiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+    {
+        "tag": "curso_5",
+        "patterns": [
+            "¿Cuál es el costo del curso de IPERC?",
+            "¿Qué duración tiene el curso de IPERC?",
+            "IPERC", "iperc"
+        ],
+        "responses": [
+            "El curso 'IPERC' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+    {
+        "tag": "curso_6",
+        "patterns": [
+            "Trabajos en Altura - Capacitación básica", "trabajos en altura - capacitacion basica",
+            "Trabajos en Altura basado en el Anexo N°6", 
+            "Trabajos en Altura según ANEXO N° 6", "trabajos en altura según anexo n°6", "trabajos en altura según anexo n°6"
+
+        ],
+        "responses": [
+            "El curso 'Trabajos en altura' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+    {
+        "tag": "curso_7",
+        "patterns": [
+            "¿Cuál es el costo del curso de Mapa de Riesgos?",
+            "¿Qué duración tiene el curso de Riesgos psicosociales?",
+            "Mapa de Riesgos. Riesgos psicosociales",
+            "Mapa de Riesgos", "mapa de riesgos", "riesgos psicosociales",
+            "Riesgos psicosociales"
+        ],
+        "responses": [
+            "El curso 'Mapa de Riesgos. Riesgos psicosociales' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+    {
+        "tag": "curso_8",
+        "patterns": [
+            "¿Cuál es el costo del curso de Significado y uso de código de señales?",
+            "¿Qué duración tiene el curso de señales y colores?", "señales y colores", "significado y uso de codigo de señales y colores",
+            "Significado y uso de código de señales y colores", "Codigos de señales y colores", "significado y usos de codigo de señales"
+        ],
+        "responses": [
+            "El curso 'Significado y uso de código de señales y colores' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+    {
+        "tag": "curso_9",
+        "patterns": [
+            "¿Cuál es el costo del curso de Auditoría, Fiscalización e Inspección?",
+            "¿Qué duración tiene el curso de Inspección de Seguridad?",
+            "Auditoría, Fiscalización e Inspección de Seguridad",
+            "Fiscalización", "Inspeccion de seguridad", "auditoria", "fiscalizacion", "inspeccion", "auditoria fiscalizacion e inspeccion de seguridad"
+        ],
+        "responses": [
+            "El curso 'Auditoría, Fiscalización e Inspección de Seguridad' tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+    {
+        "tag": "curso_10",
+        "patterns": [
+            "¿Cuál es el costo del curso de Primeros Auxilios?",
+            "¿Qué duración tiene el curso de Primeros Auxilios?",
+            "Primeros Auxilios", "primeros auxilios"
+        ],
+        "responses": [
+            "El curso 'Primeros Auxilios' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+        ]
+    },
+        {
+            "tag": "curso_11",
+            "patterns": [
+                "¿Cuál es el costo del curso de Prevención y Protección Contra Incendios?",
+                "¿Qué duración tiene el curso de Prevención y Protección Contra Incendios?", "prevencion contra incendios",
+                "Prevención y Protección Contra Incendios", "incendios", "prevencion y protección contra incendios", "proteccion contra incendios"
+            ],
+            "responses": [
+                "El curso 'Prevención y Protección Contra Incendios' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_12",
+            "patterns": [
+                "¿Cuál es el costo del curso de Estándares y procedimiento escrito de trabajo seguro?",
+                "¿Qué duración tiene el curso de trabajo seguro?", "trabajo seguro por actividades",
+                "Estándares y procedimiento escrito de trabajo seguro por actividades", "estadaras y procedimientos"
+            ],
+            "responses": [
+                "El curso 'Estándares y procedimiento escrito de trabajo seguro por actividades' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_13",
+            "patterns": [
+                "¿Cuál es el costo del curso de Higiene Ocupacional?",
+                "¿Qué duración tiene el curso de Higiene Ocupacional?",
+                "Higiene Ocupacional (Agentes físicos, Químicos, Biológicos). Disposición de residuos sólidos. Control de Sustancias peligrosas",
+                "Higiene ocupacional", "Disposición de residuos solidos",
+                "Disposición de residuos solidos", "higiene ocupacional", "agentes", "fisicos", "quimicos", "biologias"
+            ],
+            "responses": [
+                "El curso 'Higiene Ocupacional (Agentes físicos, Químicos, Biológicos). Disposición de residuos sólidos. Control de Sustancias peligrosas' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_14",
+            "patterns": [
+                "¿Cuál es el costo del curso de Manejo defensivo?",
+                "¿Qué duración tiene el curso de transporte de personal?", "manejo defensivo",
+                "Manejo defensivo y/o transporte de personal", "Manejo defensivo", "transporte de personal"
+            ],
+            "responses": [
+                "El curso 'Manejo defensivo y/o transporte de personal' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."]
+        },
+        {
+            "tag": "curso_15",
+            "patterns": [
+                "¿Cuál es el costo del curso de Comité de Seguridad y Salud Ocupacional?",
+                "¿Qué duración tiene el curso de Reglamento Interno de Seguridad y Salud Ocupacional?",
+                "Comité de Seguridad y Salud Ocupacional. Reglamento Interno de Seguridad y Salud Ocupacional. Programa Anual de Seguridad y Salud Ocupacional",
+                "Comite de seguridad y salud ocupacional", "Seguridad y salud ocupacional", "Salud ocupacional", "comite de seguridad"
+            ],
+            "responses": [
+                "El curso 'Comité de Seguridad y Salud Ocupacional. Reglamento Interno de Seguridad y Salud Ocupacional. Programa Anual de Seguridad y Salud Ocupacional' tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV."]
+        },
+        {
+            "tag": "curso_16",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad en la oficina y ergonomía?",
+                "¿Qué duración tiene el curso de ergonomía en la oficina?",
+                "Seguridad en la oficina y ergonomía", "ergonomia", "seguridad en la oficina y ergonomia"
+            ],
+            "responses": [
+                "El curso 'Seguridad en la oficina y ergonomía' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_17",
+            "patterns": [
+                "¿Cuál es el costo del curso de Riesgos Eléctricos?",
+                "¿Qué duración tiene el curso de Riesgos Eléctricos?",
+                "Riesgos Eléctricos", "Riesgos Electricos", "riesgos electricos"
+            ],
+            "responses": [
+                "El curso 'Riesgos Eléctricos' tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_18",
+            "patterns": [
+                "¿Cuál es el costo del curso de Prevención de accidente por desprendimiento de rocas?",
+                "¿Qué duración tiene el curso de desprendimiento de rocas?", "prevencion de accidente por desprendmiento de rocas",
+                "Prevención de accidente por desprendimiento de rocas", "Desprendimiento de rocas"
+            ],
+            "responses": [
+                "El curso 'Prevención de accidente por desprendimiento de rocas' tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_19",
+            "patterns": [
+                "¿Cuál es el costo del curso de Prevención de accidente por gaseamiento?",
+                "¿Qué duración tiene el curso de accidente por gaseamiento?", "prevencion de accidente por gaseamiento",
+                "Prevención de accidente por gaseamiento", "Accidente por gaseamiento", "accidente por gaseamiento", "gaseamiento"
+            ],
+            "responses": [
+                "El curso 'Prevención de accidente por gaseamiento' tiene una duración de 3 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_20",
+            "patterns": [
+                "¿Cuál es el costo del curso sobre el uso de equipo de protección personal?",
+                "¿Qué duración tiene el curso de equipo de protección personal?",
+                "El uso de equipo de protección personal (EPP)",
+                "EPP", "equipo de protección personal", "epp"
+            ],
+            "responses": [
+                "El curso 'El uso de equipo de protección personal (EPP)' tiene una duración de 2 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_21",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad en Manipulación de Llantas?",
+                "¿Qué duración tiene el curso de Manipulación de Llantas?",
+                "Seguridad en Manipulación de Llantas", "Manipulacion de llantas", "llantas"
+            ],
+            "responses": [
+                "El curso 'Seguridad en Manipulación de Llantas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_22",
+            "patterns": [
+                "¿Cuál es el costo del curso Módulo básico para supervisores?",
+                "¿Qué duración tiene el curso para supervisores?",
+                "Módulo básico para supervisores", "modulo basico para supervisores"
+            ],
+            "responses": [
+                "El curso 'Módulo básico para supervisores' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_23",
+            "patterns": [
+                "¿Cuál es el costo del curso para Choferes escolta?",
+                "¿Qué duración tiene el curso de escoltas?",
+                "Choferes escolta", "choferes"
+            ],
+            "responses": [
+                "El curso 'Choferes escolta' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_24",
+            "patterns": [
+                "¿Cuál es el costo del curso de Gestión de riesgos de la fatiga?",
+                "¿Qué duración tiene el curso de fatiga?", "Riesgos de la fatiga",
+                "Gestión de riesgos de la fatiga", "riesgo de la fatiga", "fatiga"
+            ],
+            "responses": [
+                "El curso 'Gestión de riesgos de la fatiga' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_25",
+            "patterns": [
+                "¿Cuál es el costo del curso de Manejo defensivo con práctica?",
+                "¿Qué duración tiene el curso de manejo defensivo práctico?",
+                "Manejo defensivo con desarrollo de práctica de manejo", "practica de manejo", "manejo defensivos", "Manejo defensivo", "manejo defensivo"
+            ],
+            "responses": [
+                "El curso 'Manejo defensivo con desarrollo de práctica de manejo' incluye alquiler de circuito de manejo, camioneta y combustible. Tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_26",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad con vigías?",
+                "¿Qué duración tiene el curso de vigías?",
+                "Seguridad con vigías", "vigias"
+            ],
+            "responses": [
+                "El curso 'Seguridad con vigías' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_27",
+            "patterns": [
+                "¿Cuál es el costo del curso de Tormentas eléctricas?",
+                "¿Qué duración tiene el curso de tormentas?",
+                "Tormentas eléctricas", "tormentas"
+            ],
+            "responses": [
+                "El curso 'Tormentas eléctricas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_28",
+            "patterns": [
+                "¿Cuál es el costo del curso de Bloqueo de energías?",
+                "¿Qué duración tiene el curso de energías?","electrica", "mecanica", "hidraulica", "neumatica", 
+                "Bloqueo de energías (eléctrica, mecánica, hidráulica, neumática y otros)", "Bloqueo de energias"
+            ],
+            "responses": [
+                "El curso 'Bloqueo de energías (eléctrica, mecánica, hidráulica, neumática y otros)' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_29",
+            "patterns": [
+                "¿Cuál es el costo del curso de Andamios y plataformas elevadas?",
+                "¿Qué duración tiene el curso de andamios?", "andamios", "plataformas",
+                "Andamios y plataformas elevadas", "Plataformas elevadas"
+            ],
+            "responses": [
+                "El curso 'Andamios y plataformas elevadas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_30",
+            "patterns": [
+                "¿Cuál es el costo del curso de Prevención de caída de rocas?",
+                "¿Qué duración tiene el curso de caída de rocas?",
+                "Prevención de caída de rocas", "Caida de rocas"
+            ],
+            "responses": [
+                "El curso 'Prevención de caída de rocas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_31",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad con explosivos?",
+                "¿Qué duración tiene el curso de explosivos?",
+                "Seguridad con explosivos", "explosivos"
+            ],
+            "responses": [
+                "El curso 'Seguridad con explosivos' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_32",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad con herramientas eléctricas?",
+                "¿Qué duración tiene el curso de herramientas eléctricas?",
+                "Seguridad con herramientas eléctricas", "herramientas electricas", "herramientas"
+            ],
+            "responses": [
+                "El curso 'Seguridad con herramientas eléctricas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_33",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad con herramientas manuales?",
+                "¿Qué duración tiene el curso de herramientas manuales?",
+                "Seguridad con herramientas manuales", "herramientas manuales", "seguridad con herramientas manuales"
+            ],
+            "responses": [
+                "El curso 'Seguridad con herramientas manuales' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_34",
+            "patterns": [
+                "Trabajos en Caliente - Capacitación de Cumplimiento en seguridad",
+                "trabajos en caliente capacitación de cumplimiento en seguridad",
+                "Trabajos en Caliente: Capacitación de Cumplimiento en seguridad"
+            ],
+            "responses": [
+                "El curso 'Trabajos en caliente' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_35",
+            "patterns": [
+                "Excavaziones y Zanjas - Capacitación de Cumplimiento en seguridad",
+                "Excavaziones y Zanjas capacitación de cumplimiento en seguridad",
+                "Excavaciones y zanjas", "excavaciones", "excavaciones y zanjas"
+            ],
+            "responses": [
+                "El curso 'Excavaziones y zanjas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_36",
+            "patterns": [
+                "¿Cuál es el costo del curso de Trabajos en espacios confinados?",
+                "¿Qué duración tiene el curso de espacios confinados?",
+                "Trabajos en espacios confinados", "trabajos en espacios confinados"
+            ],
+            "responses": [
+                "El curso 'Trabajos en espacios confinados' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_37",
+            "patterns": [
+                "¿Cuál es el costo del curso de Uso de la hoja de datos de seguridad de materiales?",
+                "¿Qué duración tiene el curso de HDSM - MSDS?", "HDSM", "MSDM", "Hoja de datos de seguridad",
+                "Uso de la información de la hoja de datos de seguridad de materiales (HDSM - MSDS)", "hdsm", "msds", "hoja de datos de seguridad de materiales"
+            ],
+            "responses": [
+                "El curso 'Uso de la información de la hoja de datos de seguridad de materiales (HDSM - MSDS)' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_38",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad con Izaje de Carga?",
+                "¿Qué duración tiene el curso de izaje de carga?",
+                "Seguridad con Izaje de Carga", "seguridad con izaje de carga"
+            ],
+            "responses": [
+                "El curso 'Seguridad con Izaje de Carga' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_39",
+            "patterns": [
+                "¿Cuál es el costo del curso de Seguridad ante Agresión por Terceros?",
+                "¿Qué duración tiene el curso de agresión por terceros?", "agresion por terceros",
+                "Seguridad ante la Agresión por Terceros", "Agresion por terceros"
+            ],
+            "responses": [
+                "El curso 'Seguridad ante la Agresión por Terceros' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_40",
+            "patterns": [
+                "¿Cuál es el costo del curso de Control de tierra?",
+                "¿Qué duración tiene el curso de control de tierra?",
+                "Control de tierra", "tierra"
+            ],
+            "responses": [
+                "El curso 'Control de tierra' se adapta a las horas y costos según los requerimientos específicos. Para más información comunicarte con administración llamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+        },
+        {
+            "tag": "curso_seguridad_movimiento_tierras",
+            "patterns": [
+              "¿Cuál es el costo del curso de Seguridad en movimiento de tierras?",
+              "¿Qué duración tiene el curso de Seguridad en movimiento de tierras?", "seguridad en movimiento de tierras", 
+              "Curso de seguridad en movimiento de tierras", "Movimiento de tierras", "movimiento de tierras"
+            ],
+            "responses": [
+             "El curso 'Seguridad en movimiento de tierras' se adapta a las horas y costos según los requerimientos específicos. Para más información comunicarte con administración llamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+        },
+          {
+            "tag": "curso_observacion_tareas",
+            "patterns": [
+              "¿Cuál es el costo del curso de Observación de tareas?",
+              "¿Qué duración tiene el curso de Observación de tareas?",
+              "Curso de observación de tareas", "Observación de tareas", "observacion de tareas"
+            ],
+            "responses": [
+              "El curso 'Observación de tareas' se adapta a las horas y costos según los requerimientos específicos. Para más información comunicarte con administración llamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+          },
+          {
+            "tag": "curso_inspecciones_seguridad",
+            "patterns": [
+              "¿Cuál es el costo del curso de Inspecciones de seguridad?",
+              "¿Qué duración tiene el curso de Inspecciones de seguridad?",
+              "Curso de inspecciones de seguridad", "Inspecciones de seguridad", "inspeccion de seguridad"
+            ],
+            "responses": [
+              "El curso 'Inspecciones de seguridad' se adapta a las horas y costos según los requerimientos específicos. Para más información comunicarte con administración llamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+          },
+          {
+            "tag": "curso_ats",
+            "patterns": [
+              "¿Cuál es el costo del curso de ATS?",
+              "¿Qué duración tiene el curso de ATS?",
+              "Curso de ATS", "ATS", "ats"
+            ],
+            "responses": [
+              "El curso 'ATS' (Análisis de Trabajo Seguro) se adapta a las horas y costos según los requerimientos específicos. Para más información comunicarte con administración llamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+          },
+          {
+            "tag": "curso_seguridad_electrica",
+            "patterns": [
+              "¿Cuál es el costo del curso de Seguridad eléctrica?",
+              "¿Qué duración tiene el curso de Seguridad eléctrica?",
+              "Curso de seguridad eléctrica", "seguridad eléctrica", "nfpa 70e", "NFPA 70e"
+            ],
+            "responses": [
+              "El curso 'Seguridad eléctrica (NFPA 70e)' se adapta a las horas y costos según los requerimientos específicos. Para más información comunicarte con administración llamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+          }, 
+        {
+            "tag": "curso_46",
+            "patterns": [
+                "¿Cuál es el costo del curso de Primer Respondedor? ",
+                "¿Qué duración tiene el curso de Primer Respondedor?",
+                "Primer Respondedor", "primer responder"
+            ],
+            "responses": [
+                "El curso 'Primer Respondedor' tiene una duración de 24 horas y el costo a cordinar con administracion llamando al +51 904 113 095 o 076 614374 o por correo electrónico a inscripciones@ersperu.pe o administracion@ersperu.pe"
+            ]
+        },
+        {
+            "tag": "curso_47",
+            "patterns": [
+                "¿Cuál es el costo del curso de Rescate en espacios confinados?",
+                "¿Qué duración tiene el curso de Rescate en espacios confinados?",
+                "Rescate en espacios confinados", "rescate en espacios confinados"
+            ],
+            "responses": [
+                "El curso 'Rescate en espacios confinados' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_48",
+            "patterns": [
+                "¿Cuál es el costo del curso de Rescate en zanjas?",
+                "¿Qué duración tiene el curso de Rescate en zanjas?",
+                "Rescate en zanjas", "Zanjas", "rescate en zanjas"
+            ],
+            "responses": [
+                "El curso 'Rescate en zanjas' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_49",
+            "patterns": [
+                "¿Cuál es el costo del curso de Rescate en minas subterráneas?",
+                "¿Qué duración tiene el curso de Rescate en minas subterráneas?", "rescate en minas subterraneas",
+                "Rescate en minas subterráneas", "Minas subterraneas", "minas", "minas subterraneas", "subterraneas"
+            ],
+            "responses": [
+                "El curso 'Rescate en minas subterráneas' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_50",
+            "patterns": [
+                "¿Cuál es el costo del curso de Rescate en aguas?",
+                "¿Qué duración tiene el curso de Rescate en aguas?",
+                "Rescate en aguas", "rescate en aguas", "aguas"
+            ],
+            "responses": [
+                "El curso 'Rescate en aguas' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_51",
+            "patterns": [
+                "¿Cuál es el costo del curso de Rescate con cuerdas?",
+                "¿Qué duración tiene el curso de Rescate con cuerdas?",
+                "Rescate con cuerdas", "cuerdas", "rescate en cuerdas", "rescate con cuerdas"
+            ],
+            "responses": [
+                "El curso 'Rescate con cuerdas' tiene una duración de 24 horas y el costo a cordinar con administracion llamando al +51 904 113 095 o 076 614374 o por correo electrónico a inscripciones@ersperu.pe o administracion@ersperu.pe."
+            ]
+        },
+        {
+            "tag": "curso_52",
+            "patterns": [
+                "¿Cuál es el costo del curso de Extricación vehicular?",
+                "¿Qué duración tiene el curso de Extricación vehicular?",
+                "Extricación vehicular", "extrixacion", "extrixacion vehicular"
+            ],
+            "responses": [
+                "El curso 'Extricación vehicular' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_53",
+            "patterns": [
+                "¿Cuál es el costo del curso MATPEL Nivel Advertencia (I)?",
+                "¿Qué duración tiene el curso MATPEL Nivel Advertencia (I)?",
+                "MATPEL Nivel Advertencia (I)", "MATPEL 1", "MATPEL I"
+            ],
+            "responses": [
+                "El curso 'MATPEL Nivel Advertencia (I)' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_54",
+            "patterns": [
+                "¿Cuál es el costo del curso MATPEL Nivel Operaciones Básicas (II)?",
+                "¿Qué duración tiene el curso MATPEL Nivel Operaciones Básicas (II)?",
+                "MATPEL Nivel Operaciones Básicas (II)", "MATPEL 2", "MATPEL II"
+            ],
+            "responses": [
+                "El curso 'MATPEL Nivel Operaciones Básicas (II)' tiene una duración de 8 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_55",
+            "patterns": [
+                "¿Cuál es el costo del curso MATPEL Nivel Técnico (III)?",
+                "¿Qué duración tiene el curso MATPEL Nivel Técnico (III)?",
+                "MATPEL Nivel Técnico (III)", "MATPEL 3", "MATPEL III"
+            ],
+            "responses": [
+                "El curso 'MATPEL Nivel Técnico (III)' tiene una duración de 24 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_56",
+            "patterns": [
+                "¿Cuál es el costo del curso Control de Sustancias Peligrosas?",
+                "¿Qué duración tiene el curso de Control de Sustancias Peligrosas?",
+                "Control de Sustancias Peligrosas", "Sustancias peligrosas", "sustancias peligrosas", "control de sustancias peligrosas"
+            ],
+            "responses": [
+                "El curso 'Control de Sustancias Peligrosas' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_57",
+            "patterns": [
+                "¿Cuál es el costo del curso Primera Respuesta a Intoxicación con Cianuro?",
+                "¿Qué duración tiene el curso de Intoxicación con Cianuro?", "primera respuesta a intoxicación con cianuro",
+                "Primera Respuesta a Intoxicación con Cianuro", "intoxicacion de cianuro", "cianuro"
+            ],
+            "responses": [
+                "El curso 'Primera Respuesta a Intoxicación con Cianuro' tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_58",
+            "patterns": [
+                "¿Cuál es el costo del curso Formación de Brigadas en respuesta a emergencias?",
+                "¿Qué duración tiene el curso de Brigadas en respuesta a emergencias?", "formacion de brigadas en respuesta a emergencias",
+                "Formación de Brigadas en respuesta a emergencias", "respuesta a emergencias"
+            ],
+            "responses": [
+                "El curso 'Formación de Brigadas en respuesta a emergencias' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_59",
+            "patterns": [
+                "Trabajos en altura para supervisores", "Trabajos en Altura - Capacitación para supervisores"
+            ],
+            "responses": [
+                "El curso 'Trabajos en Altura' para supervisores, tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_60",
+            "patterns": [
+                "Trabajos en Caliente - Capacitación para supervisores", "capacitación para supervisores trabajos en caliente",
+                "Trabajos en Caliente - Capacitación para supervisores"
+            ],
+            "responses": [
+                "El curso 'Trabajos en Caliente' para supervisores, tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_61",
+            "patterns": [
+                "Excavaziones y Zanjas - Capacitación para supervisores",
+                "¿Qué duración tiene el curso de Excavaciones y Zanjas?"
+            ],
+            "responses": [
+                "El curso 'Excavaciones y Zanjas' para supervisores, tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "beneficios",
+            "patterns": ["ok", "OK", "beneficios", "Beneficios", "esta bien", "okey", "vale", "¿Qué beneficios ofrecen?", "ventajas del curso", "ventajas", "¿Qué ofrecen?", "¿Qué me ofrecen?",
+        "¿Tiene beneficios el curso?", "¿Qué incluye el curso?", "ya", "Ya", "aya", "Aya", "cuales son los benficios", "que beneficios me afrecen", "Como empresa que beneficios tienen"],
+            "responses": [
+                "Los beneficios por desarrollar sus cursos con nuestra representada son:\n\n ✓ Asesoramiento especializado en la elaboración de su plan anual de capacitación. \n\n ✓ 1 beca gratuitas al 100% para 1 supervisor o gerencia en el curso de su preferencia según cronograma del curso. \n\n ✓ Reporte general de los cursos llevados por sus colaboradores considerando su plan anual de capacitación. \n\n ✓ Reporte de participación en cada curso. \n\n ✓ Certificado para cada participante con, nombres completos, empresa y cantidad horas capacitadas."
+            ]
+        },
+        {
+            "tag": "curso_62",
+            "patterns": [
+                "¿Cuál es el costo del curso de Espacios Confinados?",
+                "¿Qué duración tiene el curso de Espacios Confinados?",
+                "Espacios Confinados", "espacios confinados"
+            ],
+            "responses": [
+                "El curso 'Espacios Confinados' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_63",
+            "patterns": [
+                "¿Cuál es el costo del curso de Izaje de Cargas?",
+                "¿Qué duración tiene el curso de Izaje de Cargas?",
+                "Izaje de Cargas", "izaje", "izaje", "izaje de cargas"
+            ],
+            "responses": [
+                "El curso 'Izaje de Cargas' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_64",
+            "patterns": [
+                "¿Cuál es el costo del curso de Aislamiento de Energías?",
+                "¿Qué duración tiene el curso de Aislamiento de Energías?",
+                "Aislamiento de Energías", "Aislamiento", "aislamiento", "aislamiento de energias"
+            ],
+            "responses": [
+                "El curso 'Aislamiento de Energías' tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV."
+            ]
+        },
+        {
+            "tag": "curso_65",
+            "patterns": [
+                "¿Cuál es el costo del curso de Materiales Peligrosos - MATPEL?",
+                "¿Qué duración tiene el curso de Materiales Peligrosos - MATPEL?",
+                "Materiales Peligrosos - MATPEL",
+                "MATPEL", "Materiales peligrosos", "materiales peligroso"
+            ],
+            "responses": [
+                "El curso 'Materiales Peligrosos - MATPEL' de acuerdo a los requisitos de norma NFPA 470 para supervisores y publico en general, se adapta a las horas y costos según los requerimientos específicos. \n\n **Para más información comunicarte con administraciónllamando al +51 904 113 095 o al 076 614374, o enviando un correo a inscripciones@ersperu.pe o administracion@ersperu.pe.**"
+            ]
+        },
+        {
+            "tag": "TRABAJOS_EN_ALTURA",
+            "patterns": ["trabajos en altura", "Trabajos en altura", "¿Cuál es el costo del curso de Trabajos en Altura?",
+                        "¿Qué duración tiene el curso de Trabajos en Altura?", "Cuanto cuesta el curso trabajos en altura"],
+            "responses": [
+            "Contamos con dos cursos de Trabajos en Altura:\n\n1. **Trabajos en Altura** - Basado en el Anexo N°6 del DS 024-2016 y su modificarotia en DS 023-2017 reclamento de seguridad y salud ocupacional en mineria\n\n2. **Trabajos en Altura - Capacitación para supervisores de Alto riesgo**\n **Tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV.**"
+        ]
+        },
+        {
+            "tag": "TRABAJOS_EN_CALIENTE",
+            "patterns": ["¿Cuál es el costo del curso de Trabajos en caliente?", "trabajos en altura",
+            "¿Qué duración tiene el curso de trabajos en caliente?","Trabajos en caliente"],
+            "responses": [
+                "Contamos con dos cursos de Trabajos en Caliente: \n\n1. **Trabajos en Caliente - Capacitación de Cumplimiento en seguridad tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV.**\n\n2. **Trabajos en Caliente - Capacitación para supervisores de Alto riesgo tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV.**"
+            ]
+          },
+          {
+            "tag": "EXCAVAZIONES_Y_ZANJAS",
+            "patterns": ["Excavaziones y Zanjas", "¿Cuál es el costo del curso de Excavaciones y Zanjas?",
+                        "¿Qué duración tiene el curso de Excavaciones y Zanjas?", "Excavaciones y Zanjas"],
+            "responses": [
+                "Contamos con dos cursos de Excavaziones y Zanjas: \n\n1. **Excavaziones y Zanjas - Capacitación de Cumplimineto en seguridad, tiene una duración de 4 horas y un costo de 30 soles por participante, más IGV.**\n\n2. **Excavaziones y Zanjas - Capacitación para supervisores, tiene una duración de 8 horas y un costo de 45 soles por participante, más IGV.**"
+            ]
+          },
+        {
+            "tag": "TIEMPO_DE_LOS_CURSOS",
+            "patterns":["cual es el tiempo de los cursos", "¿cuál es el tiempo de los cursos?", "tiempo de cursos", "Cuanto dura un curso", 
+            "Cual es el tiempo de los cursos", "Duracion de un curso", "horas", "Horas"],
+            "responses":["Los cursos tienen diferentes duraciones: 2 horas, 4 horas o 8 horas"]
+        },
+        {
+            "tag": "ERS",
+            "patterns": ["Que es ERS", "Quienes son", "ers", "que es ers", "quienes son"],
+            "responses":["ERS, es un centro especializado en brindar servicios de entrenamiento y capacitación en, Emergencias y Rescate; Seguridad, Higiene Industrial y Salud Ocupacional; Instalación y Mantenimiento de Sistemas de Lucha Contra Incendios desde el 2014 hasta la actualidad"]
+        },
+        {
+            "tag": "LEY",
+            "patterns":["29783 ley de seguridad y salud en el trabajo", "ley 29783", "Ley 29783", "Seguridad en el trabajo", "Que ley aplican", "tienen una ley",
+            "Tienen una ley","Trabajan con alguna ley", "Que me puedes decir de la ley 29783", "lsst", "LSST"],
+            "responses":["La Ley 29783, también conocida como Ley de Seguridad y Salud en el Trabajo (LSST), es una norma que establece los requisitos para proteger a los trabajadores de enfermedades y accidentes relacionados con el trabajo. En nuestra empresa trabajamos cumpliendo con esta ley para asegurar el bienestar y la seguridad de nuestros colaboradores."]
+        },
+        {
+            "tag": "NECESITO_OTROS_CURSOS",
+            "patterns":["Puedo pedir otros cursos", "otros cursos", "Otros cursos", "quiero que me dicten un nuevo curso","un curso nuevo", "pueden dictar un curso nuevo"],
+            "responses":["Para Otros cursos a Solicitud, Evaluación y Aprobación"]
+        },
+        {
+            "tag": "SERVICIOS",
+            "patterns":["Servicios", "servicios", "cuales son sus servicios", "Que servicios ofrecen", "Sus servicios"],
+            "responses":["**Nuestros Servicios**:\n\n➢ Consultoría, evaluación, desarrollo e implementación de programas de seguridad, salud en el trabajo, higiene ocupacional, medio ambiente, calidad y respuesta a emergencias.\n\n➢ Capacitación y entrenamiento en seguridad, respuesta a emergencias, formación de brigadas y otros trabajos considerados de alto riesgo o tareas criticas para la minería, construcción e industria en general.\n\n➢ Higiene Ocupacional, orientada a efectuar monitoreos de agentes: físicos, químicos, biológicos, psicosociales, disergonómicos para identificar peligros, reconocer, evaluar y controlar los factores de riesgo ocupacionales.\n\n➢ Inspección, mantenimiento y construcción de sistemas de protección y lucha contra incendios.\n\n➢ Brindar servicios de evaluación de riesgos ambientales y de vulnerabilidad a desastres naturales."]
+        },
+        {
+            "tag": "no_response",
+            "patterns": [],
+            "responses": [
+                "Lo siento, no entendí eso. ¿Podrías intentar preguntar de otra forma?"]
+        }
+    ]
+} 
