@@ -135,13 +135,18 @@
       '',
       'Quisiera conocer los siguientes pasos y recibir una propuesta.'
     ].filter((line, index, lines) => line !== '' || (index > 0 && lines[index - 1] !== '')).join('\n');
+    // Build links only after the completed consultation has passed validation.
+    $('#send-whatsapp').href = 'https://wa.me/51987879692?text=' + encodeURIComponent(resultText.value);
+    const subject = 'Consulta web LT Soft & Systems · ' + get('service');
+    const emailBody = resultText.value.replace(/\r?\n/g, '\r\n');
+    $('#send-email').href = 'mailto:ldluistello@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
     formView.hidden = true;
     resultView.hidden = false;
     briefDialog.setAttribute('aria-labelledby', 'brief-result-title');
     statusText.textContent = '';
     $('#copy-brief').innerHTML = '<svg><use href="#i-copy"/></svg> Copiar mensaje';
     briefDialog.scrollTop = 0;
-    $('#copy-brief').focus();
+    $('#send-whatsapp').focus();
   });
   ['name', 'idea'].forEach(key => {
     const field = briefForm.elements.namedItem(key);
@@ -172,7 +177,7 @@
     }
     if (copied) {
       button.innerHTML = '<svg><use href="#i-check"/></svg> Mensaje copiado';
-      statusText.textContent = 'Copiado. Puedes pegarlo donde quieras compartir tu consulta.';
+      statusText.textContent = 'Copiado. Puedes pegarlo en tu conversación con Luis.';
     } else {
       statusText.textContent = 'Selecciona y copia el texto con Ctrl+C, ⌘C o la opción Copiar de tu dispositivo.';
     }
