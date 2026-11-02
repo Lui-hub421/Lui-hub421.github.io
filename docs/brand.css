@@ -238,3 +238,14 @@
   .client-logo-panel {transition: none;}
   .client-card:hover .client-logo-panel {transform: none;}
 }
+
+/* Links to published client websites */
+a.client-logo-panel{cursor:pointer}
+.client-logo-panel:focus-visible{outline:3px solid #2267a2;outline-offset:5px}
+.client-result-link{display:inline-flex;align-items:center;justify-content:center;gap:17px;margin-top:16px;padding:10px 14px;min-height:44px;border:1px solid #afc7e6;border-radius:7px;background:#e2ecf9;color:#194f86;font-size:11px;font-weight:600;line-height:1.3;transition:background .2s,border-color .2s}
+.client-result-link svg{width:15px;height:15px;transition:transform .2s}
+.client-result-link:hover{background:#cfe4fa;border-color:#648cb9}
+.client-result-link:hover svg{transform:translate(2px,-2px)}
+.client-result-link:focus-visible{outline:3px solid #2267a2;outline-offset:4px}
+@media(max-width:767px){.client-result-link{width:100%;gap:12px;font-size:11px;padding:10px 8px;margin-top:13px}}
+@media(prefers-reduced-motion:reduce){.client-result-link,.client-result-link svg{transition:none}.client-result-link:hover svg{transform:none}}
